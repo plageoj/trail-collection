@@ -69,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "trail-collection:build:production"
+              "buildTarget": "trail-collection:build:production"
             },
             "development": {
-              "browserTarget": "trail-collection:build:development"
+              "buildTarget": "trail-collection:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -80,7 +80,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "trail-collection:build"
+            "buildTarget": "trail-collection:build"
           }
         },
         "test": {
