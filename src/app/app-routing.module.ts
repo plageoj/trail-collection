@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { TrailsComponent } from './trails/trails.component';
-import { PartsComponent } from './parts/parts.component';
+import { HomeComponent } from './components/home/home.component';
+import { PartsComponent } from './components/parts/parts.component';
+import { TrailsComponent } from './components/trails/trails.component';
 
 const routes: Routes = [
   {

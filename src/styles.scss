@@ -1,4 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: "Optima Nova", sans-serif;
+  --mat-toolbar-title-text-font: "Optima Nova", sans-serif;
+  --mdc-typography-font-family: "Optima Nova", sans-serif;
+}
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+@font-face {
+  font-family: "Optima Nova";
+  src: url("assets/m.otf") format("opentype");
+}

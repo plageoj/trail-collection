@@ -1,0 +1,8 @@
+<mat-nav-list>
+  @for (trail of trails; track trail.id) {
+    <a mat-list-item [routerLink]="['/trails', trail.id]">
+      <mat-icon matListIcon>directions_walk</mat-icon>
+      <h3 matListItemTitle>{{ trail.name }}</h3>
+    </a>
+  }
+</mat-nav-list>
