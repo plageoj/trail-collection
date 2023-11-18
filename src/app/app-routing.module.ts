@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
-import { PartsComponent } from './components/parts/parts.component';
+import { WorkshopComponent } from './components/workshop/workshop.component';
 import { TrailDetailComponent } from './components/trails/trail-detail/trail-detail.component';
 import { TrailsComponent } from './components/trails/trails.component';
 
@@ -20,8 +20,8 @@ const routes: Routes = [
   },
 
   {
-    path: 'parts',
-    component: PartsComponent,
+    path: 'workshop',
+    component: WorkshopComponent,
   },
 ];
 
