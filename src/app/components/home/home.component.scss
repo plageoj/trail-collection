@@ -22,6 +22,6 @@ p {
     left: 0;
     width: 100%;
     line-height: 2rem;
-    background: linear-gradient(transparent, rgba(#fff, 0.9));
+    background: linear-gradient(transparent, rgba(var(--mat-toolbar-container-background-color), 0.8));
   }
 }
