@@ -1,11 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
+import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { RouterModule } from '@angular/router';
 import { Trail } from 'src/app/models/trail';
+import { ComponentDialogComponent } from './component-dialog/component-dialog.component';
 
 @Component({
   selector: 'app-trail-detail',
@@ -16,6 +18,7 @@ import { Trail } from 'src/app/models/trail';
     MatButtonModule,
     MatIconModule,
     MatProgressBarModule,
+    MatDialogModule,
     RouterModule,
   ],
   templateUrl: './trail-detail.component.html',
@@ -35,10 +38,13 @@ export class TrailDetailComponent {
 
   loading = false;
 
+  constructor(private dialog: MatDialog) {}
+
   convert() {
     this.loading = true;
     setTimeout(() => {
       this.loading = false;
+      this.dialog.open(ComponentDialogComponent);
     }, 2000);
   }
 }
